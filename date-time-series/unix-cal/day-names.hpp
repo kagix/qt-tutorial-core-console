@@ -7,15 +7,18 @@ class DayNames {
 public:
 	DayNames();
 	~DayNames();
-	static const unsigned int DAY_COUNT;
 
-	static const unsigned int SUNDAY;
-	static const unsigned int MONDAY;
-	static const unsigned int TUESDAY;
-	static const unsigned int WEDNESDAY;
-	static const unsigned int THURSDAY;
-	static const unsigned int FRIDAY;
-	static const unsigned int SATURDAY;
+	enum {
+		SUNDAY,
+		MONDAY,
+		TUESDAY,
+		WEDNESDAY,
+		THURSDAY,
+		FRIDAY,
+		SATURDAY,
+		DAY_COUNT
+	};
+
 
 	const QString& operator[](const unsigned int pos) const;  
 private:
